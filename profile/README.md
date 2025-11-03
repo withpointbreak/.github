@@ -94,7 +94,7 @@ AI: Setting breakpoint at line 15... Starting debugger...
 
 ## Community
 
-Pointbreak is proprietary software, but community input is valued:
+Pointbreak is free, but it's not currently Open Source Software. At this early stage, your feedback is highly valued in helping shape the future of the project:
 
 - 🐛 **[Report bugs](https://github.com/withpointbreak/pointbreak/issues)** - Help identify and fix issues
 - 💡 **[Request features](https://github.com/withpointbreak/pointbreak/issues/new?template=feature_request.yml)** - Share ideas for improvements
