@@ -48,7 +48,7 @@ The main MCP server and VS Code extension. Download binaries, read docs, and rep
 
 **Supported:**
 - **Languages:** Rust, Python, JavaScript, TypeScript, Go, C, C++, and any language with Debug Adapter Protocol support
-- **AI Assistants:** GitHub Copilot, Cursor, Claude Code, Cline, and any MCP-compatible tool
+- **AI Assistants:** GitHub Copilot, Cursor, Claude Code, Codex, and any MCP-compatible tool
 - **IDEs:** VS Code, Cursor, Windsurf, and VS Code-compatible editors
 - **Platforms:** macOS, Linux, Windows (x64 + ARM64)
 
@@ -60,7 +60,7 @@ The main MCP server and VS Code extension. Download binaries, read docs, and rep
 # Search "Pointbreak" in Extensions marketplace
 ```
 
-**Path 2: External AI assistants (Claude Code, Cline, etc.) or Windsurf**
+**Path 2: External AI assistants (Claude Code, Codex, etc.) or Windsurf**
 ```bash
 # Step 1: Install IDE extension (search "Pointbreak" in Extensions)
 
