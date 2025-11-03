@@ -1,14 +1,8 @@
-# Pointbreak
-
-**Glass-box debugging for AI-assisted development**
-
----
-
-## What This Is
+# 👋 Pointbreak
 
 AI assistants can write code. Now they can debug it too.
 
-Pointbreak gives AI assistants real debugger access—letting them set breakpoints, step through code, and inspect variables in your IDE, all through natural language.
+Pointbreak gives AI assistants real debugger access, letting them set breakpoints, step through code, and inspect variables in your IDE, all through natural language.
 
 Instead of guessing what's wrong or adding print statements everywhere, your AI assistant can:
 - 🎯 Set breakpoints exactly where bugs occur
@@ -16,7 +10,7 @@ Instead of guessing what's wrong or adding print statements everywhere, your AI 
 - 🪜 Step through execution to understand program flow
 - 🐛 Find root causes by examining real program state
 
-## How It Works
+## 🔧 How It Works
 
 ```
 ┌─────────────┐      MCP          ┌──────────────┐      IDE Extension      ┌─────────────┐
@@ -25,42 +19,40 @@ Instead of guessing what's wrong or adding print statements everywhere, your AI 
 └─────────────┘                   └──────────────┘                         └─────────────┘
 ```
 
-**Architecture:**
+Architecture:
 1. AI assistant sends debugging commands via Model Context Protocol (MCP)
 2. Pointbreak MCP server translates commands to IDE operations
 3. IDE extension controls the native debugger (CodeLLDB, debugpy, Node Debug, etc.)
 4. Your code runs in the real debugger with breakpoints visible in the IDE
 
-**Two installation paths:**
+Two installation paths:
 
-**Built-in AI agents (GitHub Copilot, Cursor Agent):**
-- Install IDE extension → MCP server auto-registers
+Built-in AI agents (GitHub Copilot, Cursor Agent):
+- Install IDE extension, MCP server auto-registers
 - Everything works automatically
 
-**External AI assistants (Claude Code, Cline, etc.):**
-- Install IDE extension → Install MCP server → Configure AI assistant
+External AI assistants (Claude Code, Codex, etc.):
+- Install IDE extension, install MCP server, configure AI assistant
 - Gives any MCP-compatible assistant debugger access
-
-## Projects
 
 ### [pointbreak](https://github.com/withpointbreak/pointbreak)
 The main MCP server and VS Code extension. Download binaries, read docs, and report issues.
 
-**Supported:**
-- **Languages:** Rust, Python, JavaScript, TypeScript, Go, C, C++, and any language with Debug Adapter Protocol support
-- **AI Assistants:** GitHub Copilot, Cursor, Claude Code, Codex, and any MCP-compatible tool
-- **IDEs:** VS Code, Cursor, Windsurf, and VS Code-compatible editors
-- **Platforms:** macOS, Linux, Windows (x64 + ARM64)
+Supported:
+- Languages: Rust, Python, JavaScript, TypeScript, Go, C, C++, and any language with Debug Adapter Protocol support
+- AI Assistants: GitHub Copilot, Cursor, Claude Code, Codex, and any MCP-compatible tool
+- IDEs: VS Code, Cursor, Windsurf, and VS Code-compatible editors
+- Platforms: macOS, Linux, Windows (x64 + ARM64)
 
-## Get Started
+## 🚀 Get Started
 
-**Path 1: Built-in AI agents (GitHub Copilot / Cursor Agent)**
+Path 1: Built-in AI agents (GitHub Copilot / Cursor Agent)
 ```bash
-# Install VS Code/Cursor extension - MCP server auto-installs
+# Install VS Code/Cursor extension, MCP server auto-installs
 # Search "Pointbreak" in Extensions marketplace
 ```
 
-**Path 2: External AI assistants (Claude Code, Codex, etc.) or Windsurf**
+Path 2: External AI assistants (Claude Code, Codex, etc.) or Windsurf
 ```bash
 # Step 1: Install IDE extension (search "Pointbreak" in Extensions)
 
@@ -75,9 +67,9 @@ irm https://raw.githubusercontent.com/withpointbreak/pointbreak/main/scripts/ins
 # See docs for your specific assistant
 ```
 
-📚 **[Full documentation →](https://github.com/withpointbreak/pointbreak/tree/main/docs)**
+📚 **[Full documentation](https://github.com/withpointbreak/pointbreak/tree/main/docs)**
 
-## Example
+## 💡 Example
 
 ```
 User: "Debug this test and tell me why user_input is empty"
@@ -92,7 +84,7 @@ AI: Setting breakpoint at line 15... Starting debugger...
     Move the prompt above the read.
 ```
 
-## Community
+## 🤝 Community
 
 Pointbreak is free, but it's not currently Open Source Software. At this early stage, your feedback is highly valued in helping shape the future of the project:
 
@@ -100,8 +92,6 @@ Pointbreak is free, but it's not currently Open Source Software. At this early s
 - 💡 **[Request features](https://github.com/withpointbreak/pointbreak/issues/new?template=feature_request.yml)** - Share ideas for improvements
 - 💬 **[Discussions](https://github.com/withpointbreak/pointbreak/discussions)** - Share use cases and experiences
 - 🌐 **[Website](https://withpointbreak.com)** - Learn more
-
----
 
 **Glass-box debugging for AI-assisted development. Proof beats prediction.**
 
