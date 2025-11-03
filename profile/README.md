@@ -5,6 +5,7 @@ AI assistants can write code. Now they can debug it too.
 Pointbreak gives AI assistants real debugger access, letting them set breakpoints, step through code, and inspect variables in your IDE, all through natural language.
 
 Instead of guessing what's wrong or adding print statements everywhere, your AI assistant can:
+
 - 🎯 Set breakpoints exactly where bugs occur
 - 🔍 Inspect actual variable values while code runs
 - 🪜 Step through execution to understand program flow
@@ -20,6 +21,7 @@ Instead of guessing what's wrong or adding print statements everywhere, your AI 
 ```
 
 Architecture:
+
 1. AI assistant sends debugging commands via Model Context Protocol (MCP)
 2. Pointbreak MCP server translates commands to IDE operations
 3. IDE extension controls the native debugger (CodeLLDB, debugpy, Node Debug, etc.)
@@ -28,18 +30,22 @@ Architecture:
 Two installation paths:
 
 Built-in AI agents (GitHub Copilot, Cursor Agent):
+
 - Install IDE extension, MCP server auto-registers
 - Everything works automatically
 
 External AI assistants (Claude Code, Codex, etc.):
+
 - Install IDE extension, install MCP server, configure AI assistant
 - Gives any MCP-compatible assistant debugger access
 
 ### [pointbreak](https://github.com/withpointbreak/pointbreak)
+
 The main MCP server and VS Code extension. Download binaries, read docs, and report issues.
 
 Supported:
-- Languages: Rust, Python, JavaScript, TypeScript, Go, C, C++, and any language with Debug Adapter Protocol support
+
+- Languages: Python, JavaScript, TypeScript, Rust, Go, C, C++, and any language with Debug Adapter Protocol support
 - AI Assistants: GitHub Copilot, Cursor, Claude Code, Codex, and any MCP-compatible tool
 - IDEs: VS Code, Cursor, Windsurf, and VS Code-compatible editors
 - Platforms: macOS, Linux, Windows (x64 + ARM64)
@@ -47,12 +53,14 @@ Supported:
 ## 🚀 Get Started
 
 Path 1: Built-in AI agents (GitHub Copilot / Cursor Agent)
+
 ```bash
 # Install VS Code/Cursor extension, MCP server auto-installs
 # Search "Pointbreak" in Extensions marketplace
 ```
 
 Path 2: External AI assistants (Claude Code, Codex, etc.) or Windsurf
+
 ```bash
 # Step 1: Install IDE extension (search "Pointbreak" in Extensions)
 
