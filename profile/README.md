@@ -75,7 +75,7 @@ irm https://raw.githubusercontent.com/withpointbreak/pointbreak/main/scripts/ins
 # See docs for your specific assistant
 ```
 
-📚 **[Full documentation](https://github.com/withpointbreak/pointbreak/tree/main/docs)**
+📚 **[Full documentation](https://docs.withpointbreak.com)**
 
 ## 💡 Example
 
